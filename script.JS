@@ -27,15 +27,21 @@ console.log(rumus)
 document.getElementById("demo3").innerHTML = rumus;
 
 //No.4
-let studyA = ["Math", "English", "Programming"]
-let studyB =  ["Geography", "Spanish", "Programming"]
+const pelajaran1 = ["Math", "English", "Programming"];
+const pelajaran2 = ["Geography", "Spanish", "Programming"];
+
+function CekPelajaran(pelajaran1, pelajaran2) {
+    return pelajaran1.some(item => pelajaran2.includes(item))
+};
+
+CekPelajaran(pelajaran1,pelajaran2);
+
+document.getElementById("demo4").innerHTML = CekPelajaran(pelajaran1,pelajaran2);
 
 
 
+//No.5 di HTML
 
 
-//No.5
-
-
-//No.6
+//No.6 di HTML
 
